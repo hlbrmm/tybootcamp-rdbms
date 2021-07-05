@@ -17,8 +17,8 @@ public class Customer {
     @NotNull
     private String name;
 
-    public Customer(){
-
+    public Customer(Long id){
+        this.id = id;
     }
 
     public Long getId() {

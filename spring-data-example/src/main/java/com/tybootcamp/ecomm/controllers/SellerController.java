@@ -33,7 +33,7 @@ public class SellerController {
             return new ResponseEntity<>(seller, HttpStatus.OK);
         }
         catch (EntityNotFoundException e) {
-            return new ResponseEntity<>("There isn't any seller with this name.", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("There isn't any seller with this id.", HttpStatus.NOT_FOUND);
         }
     }
 
